@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>CBSE Coaching Center </title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/.com/style.css">
+
+
+  <link rel="icon" type="image/x-icon" href="/img/1.png">
+
+
+  <style>
+    .input-group .input-group-prepend .input-group-text {
+
+      width: 9rem;
+
+    }
+
+    .input-group {
+
+      margin: 2rem 0;
+
+
+    }
+  </style>
+
+
+
+</head>
+
+<body id="bd">
+
+
+
+
+
+  <!--This is a Navigation bar -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/.com/">CBSE Coaching Center <img src="/img/1.png" alt="" width="30" height="24"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/.com/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/.com/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/.com/contact.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/.com/blog.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/.com/blog.html">Support Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" method="GET" id="searchForm">
+          <input class="form-control me-2" value="" type="search" placeholder="Search" aria-label="Search" id="inputted">
+          <button class="btn btn-outline-dark" type="submit" onclick="searchMovies()">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+  <!--This is an animated slide show of random image of html , css and javascript -->
+
+  <div class="container-fluid" id="aniSlide"></div>
+
+
+
+
+  <!--This is Breadcrumb -->
+
+
+  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb p-3 ">
+      <h4>
+        <li class="breadcrumb-item "><a class="text-dark" href="/.com/index.html">Home </a></li>
+      </h4>
+
+      <h4>
+        <li class="breadcrumb-item active text-dark" aria-current="page"> / Json</li>
+      </h4>
+    </ol>
+  </nav>
+
+
+
+
+
+
+
+  <!--This is the main content -->
+
+
+
+
+
+  <div class="album py-5 bg-secondary" style="min-height: 100vh;">
+    <div class="container">
+
+      <h1 class="text-white text-center my-4">New Update Details</h1>
+
+      <div class="row d-flex justify-content-center align-item-center">
+
+
+        <div class="container" id="main_container">
+          
+          
+
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Chapter No.</span>
+            </div>
+            <input type="number" class="form-control" id="mname" aria-describedby="basic-addon3" required>
+          </div>
+
+
+
+
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Ids</span>
+            </div>
+            <input type="text" class="form-control" id="ids" aria-describedby="basic-addon3" required>
+          </div>
+
+
+
+
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> Chapter Name</span>
+            </div>
+            <input type="text" class="form-control" id="des" aria-describedby="basic-addon3" required>
+          </div>
+
+
+
+
+          <!--<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Movie Description</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>-->
+
+
+
+
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> Link</span>
+            </div>
+            <input type="text" class="form-control" id="trailer" aria-describedby="basic-addon3" required>
+          </div>
+
+
+
+
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> Thumbnail</span>
+            </div>
+            <input type="text" class="form-control" id="thumbnail" aria-describedby="basic-addon3" required>
+          </div>
+
+
+
+
+          <div class="container d-flex align-item-center justify-content-center">
+            
+            <!--<input type="submit" value="Submit" class="btn btn-dark btn-sm" style="width: 100%; margin:2rem 0;" onsubmit="showJSON()">
+            -->
+
+            <button type="submit" class="btn btn-dark btn-sm" onclick="showJSON()" style="width: 100%; margin:2rem 0;">Submit</button>
+
+
+          </div>
+
+
+
+
+        </div>
+
+        <div class="container bg-light my-4" id="main_container1">
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="b-example-divider"></div>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+
+
+          <img class="bi" width="30" height="24" src="/img/1.png">
+
+
+        </a>
+        <span class="text-muted">&copy; 2022 , CBSE Coaching Center</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://wa.me/919708268593/">
+
+            <img class="bi" width="24" height="24" src="/img/whatsapp.jpeg">
+
+          </a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/aditya_kumar_6414119/">
+
+
+            <img class="bi" width="24" height="24" src="/img/instagram.jpeg">
+
+
+
+          </a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/profile.php?id=100027830802048">
+
+            <img class="bi" width="24" height="24" src="/img/facebook.png">
+
+
+          </a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+
+
+
+  <script src="/js/bootstrap.bundle.js"></script>
+  <script src="/.com/main.js"></script>
+  <script src="/new/newMovie.js"></script>
+
+
+
+
+
+</body>
+
+</html>
